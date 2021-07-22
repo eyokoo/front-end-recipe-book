@@ -39,7 +39,6 @@ const RecipesPage = (props) => {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Id</TableCell>
             <TableCell>Title</TableCell>
           </TableRow>
         </TableHead>
@@ -47,7 +46,6 @@ const RecipesPage = (props) => {
         <TableBody>
           {props.recipes.map((recipe) => (
             <TableRow key={recipe.id}>
-              <TableCell>{recipe.id}</TableCell>
               <TableCell>{recipe.recipe_name}</TableCell>
               <TableCell>
                 <IconButton
